@@ -2,7 +2,7 @@
 This repo is the official implementation for Multi-Scale Adaptive Graph Neural Network for Multivariate Time Series Forecasting.
 
 ## 1.1 The framework of H2former
-![framework]([https://github.com/shangzongjiang/H2former/fig/main.png](https://github.com/shangzongjiang/H2former/blob/main/fig/main.png))
+![framework]([https://github.com/shangzongjiang/H2former/blob/main/fig/main.png])
 # 2 Prerequisites
 
 * Python 3.8.5
