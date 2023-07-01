@@ -40,3 +40,5 @@ python train.py -data traffic -input_size 168 -predict_step 168 -root_path ./dat
 # Train on Exchange-Rate
 python train.py -data exchange_rate -input_size 168 -predict_step 168 -root_path ./data/exchange/ -data_path exchange_rate.csv -CSCM Conv_Construct
 ```
+# 5 Main results
+![main_results](https://github.com/shangzongjiang/H2former/blob/main/fig/main_result.png)
