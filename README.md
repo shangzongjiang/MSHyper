@@ -28,7 +28,7 @@ This dataset contains the oil temperature and load data collected by electricity
 ## 4.3 Training
 ```python
 # Train on Weather
-python long_range_main.py -data weather -input_size 168 -predict_step 168 -root_path ./data/ETT/ -data_path weather.csv -CSCM Conv_Construct
+python train.py -data weather -input_size 168 -predict_step 168 -root_path ./data/ETT/ -data_path weather.csv -CSCM Conv_Construct
 # Train on Electricity
 python train.py -data elect -input_size 168 -predict_step 168 -root_path ./data/Electricity/ -data_path electricity.csv -CSCM Conv_Construct
 # Train on ETTh1
