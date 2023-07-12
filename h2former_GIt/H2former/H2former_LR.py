@@ -31,7 +31,7 @@ class Model(nn.Module):
         self.indexes = refer_points(self.all_size, opt.window_size, opt.device)
         # self.conv1 = GCNConv(dataset_cora.num_node_features, 168)
         # self.conv2 = GCNConv(168, dataset_cora.num_classes)
-        self.conv1 = TMP(512, 512)###定义下面的超图卷积方式
+        self.conv1 = TMP(512, 512)###定义下面的三阶段消息传递
         # self.conv2 = HypergraphConv(512, 512)####原始[32,512]
         # self.conv3 = HypergraphConv(512, 512)###原始[512,512]
         # self.conv1 = GCNConv(1, 16)
@@ -89,7 +89,7 @@ class Model(nn.Module):
         # x = F.relu(x)#####x=[32,223,512]####不用relu和dropout效果会好一些
         # x = F.dropout(x, training=self.training)
 
-        ####以下代码为自己实现的FC
+        ####
         """
         x=x.contiguous().view(x.size(0),-1)####x=[32,223,16]--[32,223x16]###因为地址不连续，不加contiguous可能会报错
         x=self.trans(x)
@@ -98,7 +98,7 @@ class Model(nn.Module):
 
 
 
-        #####以下代码为原始代码，即金字塔最后一维输出
+        #####
 
         indexes = self.indexes.repeat(x.size(0), 1, 1, x.size(2)).to(x.device)  ##seq_enc.size(0)(1)(2)=32,223,512  indexes=[32,169,4,512]
         indexes = indexes.view(x.size(0), -1, x.size(2))  ###index=[32,169x4,512]=[32,676,512]
@@ -259,7 +259,7 @@ class TMP(MessagePassing):
         #调用propagate方法执行消息传递，传递信息为节点特征和归一化权重
         ####propogate执行消息聚合和更新节点特征的操作
         ####propogate执行两遍，因为需要执行源节点到目标节点和目标节点到源节点
-        ####输出结果为超图卷积结果
+        ####输出结果为更新后的节点嵌入
         self.flow = 'source_to_target'
         out = self.propagate(hyperedge_index, x=x, norm=B, alpha=alpha)
         self.flow = 'target_to_source'
