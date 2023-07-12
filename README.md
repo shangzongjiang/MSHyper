@@ -9,7 +9,7 @@ This repo is the official implementation for Multi-Scale Adaptive Graph Neural N
 * PyTorch 1.13.1
 * math, sklearn, numpy, torch_geometric
 * # 3 Datasets
-To evaluate the performance of H2former, we conduct experiments on six public benchmark datasets： [Weather](https://www.bgc-jena.mpg.de/wetter/), [ETT](https://github.com/MAZiqing/FEDformer), [Traffic](http://pems.dot.ca.gov/), [Electricity](https://archive.ics.uci.edu/ml/datasets/ 294 ElectricityLoadDiagrams20112014), and [Exchange-Rate](https://github.com/MAZiqing/FEDformer).
+To evaluate the performance of H2former, we conduct experiments on six public benchmark datasets： [Weather](https://www.bgc-jena.mpg.de/wetter/), [ETT](https://github.com/MAZiqing/FEDformer), [Traffic](http://pems.dot.ca.gov/), [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014), and [Exchange-Rate](https://github.com/MAZiqing/FEDformer).
 ## 3.1 Weather
 This dataset contains 21 meteorological measurements data form the Weather Station of the Max Planck Biogeochemistry, which are sampled every 10 minutes.
 ## 3.2 Traffic
