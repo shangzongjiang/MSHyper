@@ -148,8 +148,8 @@ class TMP(MessagePassing):
         self.out_channels = out_channels
         self.use_attention = use_attention
         # self.fc = nn.Linear(self.out_channels * heads, self.out_channels)
-        self.W=nn.Linear(1,512)
-        self.dropout1 = nn.Dropout(0.1)
+        # self.W=nn.Linear(1,512)
+        # self.dropout1 = nn.Dropout(0.1)
         # self.dropout_rate=0.1
         ##超边到超边之间的attention计算
 
@@ -317,8 +317,9 @@ class TMP(MessagePassing):
                 x_new1 = x_new
                 # x_new = x_new.view(-1, self.heads, self.out_channels)####[223,512]--[223,head,512]
                 x_new = x_new.view(x_new.size(0), self.heads, -1) ####[223,512]--[223,head,512]
-                # x_i, x_j = x_new[hyperedge_index_new[0]], x_new[hyperedge_index_new[1]]  #####x_i,x_j[2,223,1,512]
-                x_i= x_new[hyperedge_index_new[0]]
+                ###直接聚合测试
+                x_i, x_j = x_new[hyperedge_index_new[0]], x_new[hyperedge_index_new[1]]  #####x_i,x_j[2,223,1,512]
+                # x_i= x_new[hyperedge_index_new[0]]
 
 
                 """
@@ -355,6 +356,7 @@ class TMP(MessagePassing):
                 # kkk=aggregated_values
                 aggregated_values=aggregated_values.unsqueeze(0)
                 # print(kkk.shape)
+                """
                 ###超边-超边之间的attention计算
                 # scores=torch.matmul(aggregated_values,self.W(aggregated_values).transpose(-2,-1))
                 # attention_weights = (self.soft(torch.matmul(aggregated_values,adj)))
@@ -370,7 +372,7 @@ class TMP(MessagePassing):
                 x_j=restored_edges.view(hyperedge_index_new.size(1), self.heads, -1)
                 # aa=torch.cat([x_i, x_j], dim=-1)
                 # x_j= x_j[hyperedge_index_new[0]]
-
+                """
                 ###edge-node
                 alpha = (torch.cat([x_i, x_j], dim=-1) * self.att).sum(dim=-1)  ####alpha=[223,head]
                 alpha = F.leaky_relu(alpha, self.negative_slope)
