@@ -37,5 +37,5 @@ python train.py -data ETTm1 -input_size 168 -predict_step 168 -root_path ./data/
 python train.py -data traffic -input_size 168 -predict_step 168 -root_path ./data/Traffic/ -data_path traffic.csv -CSCM Conv_Construct
 ```
 # 5 Main results
-![main_results](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table1.png) 
-(https://github.com/shangzongjiang/MSHyper/blob/main/fig/table2.png)
+![Multivariate](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table1.png) 
+![Univariate](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table2.png)
