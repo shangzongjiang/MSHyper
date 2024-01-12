@@ -9,15 +9,13 @@ This repo is the official implementation for Multi-Scale Adaptive Graph Neural N
 * PyTorch 1.13.1
 * math, sklearn, numpy, torch_geometric
 * # 3 Datasets
-To evaluate the performance of H2former, we conduct experiments on six public benchmark datasets： [Weather](https://www.bgc-jena.mpg.de/wetter/), [ETT](https://github.com/MAZiqing/FEDformer), [Traffic](http://pems.dot.ca.gov/), [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014), and [Exchange-Rate](https://github.com/MAZiqing/FEDformer).
+To evaluate the performance of H2former, we conduct experiments on five public benchmark datasets： [Weather](https://www.bgc-jena.mpg.de/wetter/), [ETT](https://github.com/MAZiqing/FEDformer), [Traffic](http://pems.dot.ca.gov/), and [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014).
 ## 3.1 Weather
 This dataset contains 21 meteorological measurements data form the Weather Station of the Max Planck Biogeochemistry, which are sampled every 10 minutes.
 ## 3.2 Traffic
 This dataset contains the road occupancy rates of 862 sensors in San Francisco Bay Area freeways, which are sampled hourly.
 ## 3.3 Electricity
 This dataset contains the electricity consumption of 321 clients from the UCI Machine Learning Repository, which are sampled hourly.
-## 3.4 Exchange-Rate
-This dataset contains the exchange rate date from 8 foreign countries, which are sampled daily.
 ## 3.5 ETT
 This dataset contains the oil temperature and load data collected by electricity transformers, including ETTh and ETTm, which are sampled hourly and every 15 minutes respectively
 # 4 Running
@@ -37,8 +35,6 @@ python train.py -data ETTh1 -input_size 168 -predict_step 168 -root_path ./data/
 python train.py -data ETTm1 -input_size 168 -predict_step 168 -root_path ./data/ETT/ -data_path ETTm1.csv -CSCM Conv_Construct
 # Train on Traffic
 python train.py -data traffic -input_size 168 -predict_step 168 -root_path ./data/Traffic/ -data_path traffic.csv -CSCM Conv_Construct
-# Train on Exchange-Rate
-python train.py -data exchange_rate -input_size 168 -predict_step 168 -root_path ./data/exchange/ -data_path exchange_rate.csv -CSCM Conv_Construct
 ```
 # 5 Main results
 ![main_results](https://github.com/shangzongjiang/H2former/blob/main/fig/main_result.png)
