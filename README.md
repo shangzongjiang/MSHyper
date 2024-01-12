@@ -2,7 +2,7 @@
 This repo is the official implementation for Multi-Scale Adaptive Graph Neural Network for Multivariate Time Series Forecasting.
 
 ## 1.1 The framework of MSHyper
-![framework](https://github.com/shangzongjiang/MSHyper/blob/main/fig/figure1_last7.pdf)
+![framework](https://github.com/shangzongjiang/MSHyper/blob/main/fig/figure1.png)
 # 2 Prerequisites
 
 * Python 3.8.5
@@ -37,4 +37,5 @@ python train.py -data ETTm1 -input_size 168 -predict_step 168 -root_path ./data/
 python train.py -data traffic -input_size 168 -predict_step 168 -root_path ./data/Traffic/ -data_path traffic.csv -CSCM Conv_Construct
 ```
 # 5 Main results
-![main_results](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table1.pdf)(https://github.com/shangzongjiang/MSHyper/blob/main/fig/table2.pdf)
+![main_results](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table1.png) 
+(https://github.com/shangzongjiang/MSHyper/blob/main/fig/table2.png)
