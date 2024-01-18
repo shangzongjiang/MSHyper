@@ -1,5 +1,5 @@
 # MSHyper
-This repo is the official implementation for Multi-Scale Adaptive Graph Neural Network for Multivariate Time Series Forecasting.
+This repo is the official implementation of Multi-Scale Hypergraph Transformer for Long-Range Time SeriesForecasting.
 
 ## 1.1 The framework of MSHyper
 ![framework](https://github.com/shangzongjiang/MSHyper/blob/main/fig/figure1.png)
@@ -9,14 +9,14 @@ This repo is the official implementation for Multi-Scale Adaptive Graph Neural N
 * PyTorch 1.13.1
 * math, sklearn, numpy, torch_geometric
 * # 3 Datasets
-To evaluate the performance of H2former, we conduct experiments on five public benchmark datasets： [Weather](https://www.bgc-jena.mpg.de/wetter/), [ETT](https://github.com/MAZiqing/FEDformer), [Traffic](http://pems.dot.ca.gov/), and [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014).
+To evaluate the performance of MSHyper, we conduct experiments on five public benchmark datasets： [Weather](https://www.bgc-jena.mpg.de/wetter/), [ETT(ETTh and ETTm)](https://github.com/MAZiqing/FEDformer), [Traffic](http://pems.dot.ca.gov/), and [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014).
 ## 3.1 Weather
 This dataset contains 21 meteorological measurements data form the Weather Station of the Max Planck Biogeochemistry, which are sampled every 10 minutes.
 ## 3.2 Traffic
 This dataset contains the road occupancy rates of 862 sensors in San Francisco Bay Area freeways, which are sampled hourly.
 ## 3.3 Electricity
 This dataset contains the electricity consumption of 321 clients from the UCI Machine Learning Repository, which are sampled hourly.
-## 3.5 ETT
+## 3.5 ETT(ETTh and ETTm)
 This dataset contains the oil temperature and load data collected by electricity transformers, including ETTh and ETTm, which are sampled hourly and every 15 minutes respectively
 # 4 Running
 ## 4.1 Install all dependencies listed in prerequisites
