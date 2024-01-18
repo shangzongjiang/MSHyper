@@ -1,5 +1,5 @@
 # MSHyper
-This repo is the official implementation of Multi-Scale Hypergraph Transformer for Long-Range Time SeriesForecasting.
+This repo is the official implementation of Multi-Scale Hypergraph Transformer for Long-Range Time Series Forecasting.
 
 ## 1.1 The framework of MSHyper
 ![framework](https://github.com/shangzongjiang/MSHyper/blob/main/fig/figure1.png)
