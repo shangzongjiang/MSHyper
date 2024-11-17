@@ -2,7 +2,7 @@
 ✨ This repo is the official implementation of Multi-Scale Hypergraph Transformer for Long-Range Time Series Forecasting.
 
 # 1 The framework of MSHyper
-The core of MSHyper is to build multi-scale hypergraph structures, which can explicity model high-order interactions between temporal patterns of different scales. MSHyper consist of three main parts: **Multi-Scale Feature Extraction (MFE) Module**, **Hypergraph and Hyperedge Graph Construction (H-HGC) Module**, and **Tri-Stage Message Passing (TMP) Mechanism**. The overall framework of MSHyper is shown as follows:
+The core of MSHyper is to build multi-scale hypergraph structures, which can explicity model high-order interactions between temporal patterns of different scales. MSHyper consists of three parts: **Multi-Scale Feature Extraction (MFE) Module**, **Hypergraph and Hyperedge Graph Construction (H-HGC) Module**, and **Tri-Stage Message Passing (TMP) Mechanism**. The overall framework of MSHyper is shown as follows:
 ![framework](https://github.com/shangzongjiang/MSHyper/blob/main/fig/figure1.png)
 # 2 Prerequisites
 
