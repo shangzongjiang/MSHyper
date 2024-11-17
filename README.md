@@ -52,15 +52,15 @@ sh ./scripts/Long-range/weather.sh
 or obtain specific results by runinng the following command:
 ```python
 # Train on Weather
-python train.py -data weather -input_size 168 -predict_step 168 -root_path ./data/ETT/ -data_path weather.csv -CSCM Conv_Construct
+python run_longExp.py -data weather -input_size 96 -predict_step 96 -root_path ./data/ETT/ -data_path weather.csv -CSCM Conv_Construct
 # Train on Electricity
-python train.py -data elect -input_size 168 -predict_step 168 -root_path ./data/Electricity/ -data_path electricity.csv -CSCM Conv_Construct
+python run_longExp.py -data elect -input_size 96 -predict_step 96 -root_path ./data/Electricity/ -data_path electricity.csv -CSCM Conv_Construct
 # Train on ETTh1
-python train.py -data ETTh1 -input_size 168 -predict_step 168 -root_path ./data/ETT/ -data_path ETTh1.csv -CSCM Conv_Construct
+python run_longExp.py -data ETTh1 -input_size 96 -predict_step 96 -root_path ./data/ETT/ -data_path ETTh1.csv -CSCM Conv_Construct
 # Train on ETTm1
-python train.py -data ETTm1 -input_size 168 -predict_step 168 -root_path ./data/ETT/ -data_path ETTm1.csv -CSCM Conv_Construct
+python run_longExp.py -data ETTm1 -input_size 96 -predict_step 96 -root_path ./data/ETT/ -data_path ETTm1.csv -CSCM Conv_Construct
 # Train on Traffic
-python train.py -data traffic -input_size 168 -predict_step 168 -root_path ./data/Traffic/ -data_path traffic.csv -CSCM Conv_Construct
+python run_longExp.py -data traffic -input_size 96 -predict_step 96 -root_path ./data/Traffic/ -data_path traffic.csv -CSCM Conv_Construct
 ```
 # 5 Main results
 **🏆 MSHyper achieves consistent state-of-the-art performance on all benchmarks**, covering a large variety of series with different frequencies, variate numbers and real-world scenarios.
