@@ -3,7 +3,7 @@
 
 # 1 The framework of MSHyper
 The core of MSHyper is to build multi-scale hypergraph structures, which can explicity model high-order interactions between temporal patterns of different scales. MSHyper consists of three parts: **Multi-Scale Feature Extraction (MFE) Module**, **Hypergraph and Hyperedge Graph Construction (H-HGC) Module**, and **Tri-Stage Message Passing (TMP) Mechanism**. The overall framework of MSHyper is shown as follows:
-![framework](https://github.com/shangzongjiang/MSHyper/blob/main/fig/figure1.png)
+![framework](https://github.com/shangzongjiang/MSHyper/blob/main/figures/Framework.png)
 # 2 Prerequisites
 
 * Python 3.8.5
@@ -12,7 +12,7 @@ The core of MSHyper is to build multi-scale hypergraph structures, which can exp
 * # 3 Datasets && Description
 
 To evaluate the performance of MSHyper, we conduct experiments on eight public benchmark datasets: [ETT(ETTh1, ETTh2, ETTm1, and ETTm2)](https://github.com/MAZiqing/FEDformer), [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014), [Flight](https://drive.google.com/drive/folders/1JSZByfM0Ghat3g_D3a-puTZ2JsfebNWL), [Weather](https://www.bgc-jena.mpg.de/wetter/), and [Exchange-Rate]([http://pems.dot.ca.gov/](https://github.com/MAZiqing/FEDformer)). The detailed descriptions about the eight datasets are given as follows:
-* ![dataset-statistics](https://github.com/shangzongjiang/Ada-MSHyper/blob/main/figures/dataset%20statistics.png)
+* ![dataset-statistics](https://github.com/shangzongjiang/MSHyper/blob/main/figures/dataset%20statistics.png)
 
 ## 3.1 ETT(ETTh1, ETTh2, ETTm1, and ETTm2)
 This dataset contains the oil temperature and load data collected by electricity transformers, including ETTh and ETTm, which are sampled hourly and every 15 minutes, respectively.
@@ -66,10 +66,10 @@ python train.py -data traffic -input_size 168 -predict_step 168 -root_path ./dat
 **🏆 MSHyper achieves consistent state-of-the-art performance on all benchmarks**, covering a large variety of series with different frequencies, variate numbers and real-world scenarios.
 ## 5.1 Multivariate long-range time series forecasting results
 Multivariate long-range time series forecasting results on eight real-world datasets. The input length is set as I=96, and the prediction length O is set as 96, 192, 336, and 720. The best results are bolded and the second best results are underlined.
-![Multivariate](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table1.png) 
+![Multivariate](https://github.com/shangzongjiang/MSHyper/blob/main/figures/Multivariate%20Result.png) 
 ## 5.2 Univariate long-range time series forecasting results
 Univariate long-range time series forecasting results on ETT dataset. The input length is set as I=96, and the prediction length O is set as 96, 192, 336, and 720. The best results are bolded and the second best results are underlined.
-![Univariate](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table2.png)
+![Univariate](https://github.com/shangzongjiang/MSHyper/blob/main/figures/Univariate%20Results.png)
 # Citation 
 😀If you find this repo useful, please cite our paper.
 ```
