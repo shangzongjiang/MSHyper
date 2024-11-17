@@ -70,3 +70,14 @@ Multivariate long-range time series forecasting results on eight real-world data
 ## 5.2 Univariate long-range time series forecasting results
 Univariate long-range time series forecasting results on ETT dataset. The input length is set as I=96, and the prediction length O is set as 96, 192, 336, and 720. The best results are bolded and the second best results are underlined.
 ![Univariate](https://github.com/shangzongjiang/MSHyper/blob/main/fig/table2.png)
+# Citation 
+😀If you find this repo useful, please cite our paper.
+```
+@article{shang2024mshyper,
+  title={Mshyper: Multi-scale hypergraph transformer for long-range time series forecasting},
+  author={Zongjiang, Shang and Ling, Chen},
+  journal={arXiv preprint arXiv:2401.09261},
+  year={2024}
+}
+```
+
