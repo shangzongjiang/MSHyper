@@ -1,0 +1,29 @@
+authorName: default
+experimentName: exp-Linear
+trialConcurrency: 2
+maxExecDuration: 100h
+maxTrialNum: 120
+trainingServicePlatform: local
+# search space file
+searchSpacePath: search_space.json
+useAnnotation: false
+tuner:
+  builtinTunerName: GridSearch
+#  builtinTunerName: TPE
+  classArgs:
+    #choice: maximize, minimize
+    optimize_mode: minimize
+assessor:
+  #choice: Medianstop, Curvefitting
+  builtinAssessorName: Curvefitting
+  #classArgs:
+    #epoch_num: 20
+    #threshold: 0.9
+localConfig:
+  useActiveGpu: true
+  maxTrialNumPerGpu: 2
+
+trial:
+  command:  python -u run_longExp.py --is_training 1 --root_path ./dataset/ --data_path ETTh1.csv --model_id ETTh1_96_192 --model MSHyper --data ETTh1 --features MS --seq_len 96 --pred_len 192 --enc_in 7 --dec_in 7 --des 'Exp' --itr 1
+  codeDir: .
+  gpuNum: 1

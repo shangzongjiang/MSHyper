@@ -1,0 +1,8 @@
+{
+    "batch_size":{"_type":"choice","_value":[8,16,32]},
+    "learning_rate":{"_type":"choice","_value":[0.005, 0.0001, 0.01,0.0005]},
+    "d_model":{"_type":"choice","_value":[128, 256, 512, 64,1024]},
+    "train_epochs":{"_type":"choice","_value":[5, 10, 15, 20]},
+    "d_bottleneck":{"_type":"choice","_value":[7, 128, 256, 512, 1024]},
+    "d_ff":{"_type":"choice","_value":[64, 128, 256, 512, 1024]}
+}
