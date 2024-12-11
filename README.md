@@ -77,12 +77,12 @@ If you have any questions, please feel free to contact zongjiangshang@cs.zju.edu
 # Other works
 📝 Our other works are shown as follows：
 
-Single-step forecasting: Chen L, Chen D, Shang Z, et al. Multi-scale adaptive graph neural network for multivariate time series forecasting. TKDE, 2023, 35(10): 10748-10761.
+**Single-step forecasting**: Chen L, Chen D, Shang Z, et al. Multi-scale adaptive graph neural network for multivariate time series forecasting. TKDE, 2023, 35(10): 10748-10761.
 [Code Link](https://github.com/shangzongjiang/MAGNN)
 
-AutoML related forecasting: Chen D, Chen L, Shang Z, et al. Scale-aware neural architecture search for multivariate time series forecasting. TKDD, 2024. [Code Link](https://github.com/shangzongjiang/SNAS4MTF)
+**AutoML related forecasting**: Chen D, Chen L, Shang Z, et al. Scale-aware neural architecture search for multivariate time series forecasting. TKDD, 2024. [Code Link](https://github.com/shangzongjiang/SNAS4MTF)
 
-Long-range & short-range & ultra-long-range time series forecasting: Shang Z, Chen L, Wu B, et al. Ada-MSHyper: Adaptive multi-scale hypergraph transformer for time series forecasting. NeurIPS, 2024. [Code Link](https://github.com/shangzongjiang/Ada-MSHyper)
+**Long-range & short-range & ultra-long-range time series forecasting**: Shang Z, Chen L, Wu B, et al. Ada-MSHyper: Adaptive multi-scale hypergraph transformer for time series forecasting. NeurIPS, 2024. [Code Link](https://github.com/shangzongjiang/Ada-MSHyper)
 
 # Citation 
 😀If you find this repo useful, please cite our paper.
@@ -90,11 +90,7 @@ Long-range & short-range & ultra-long-range time series forecasting: Shang Z, Ch
 @article{shang2024mshyper,
   title={Mshyper: Multi-scale hypergraph transformer for long-range time series forecasting},
   author={Zongjiang, Shang and Ling, Chen},
-  journal={arXiv preprint arXiv:2401.09261
-        
-        
-        
-        },
+  journal={arXiv preprint arXiv:2401.09261},
   year={2024}
 }
 ```
