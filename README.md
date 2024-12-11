@@ -70,13 +70,31 @@ Multivariate long-range time series forecasting results on eight real-world data
 ## 5.2 Univariate long-range time series forecasting results
 Univariate long-range time series forecasting results on ETT dataset. The input length is set as I=96, and the prediction length O is set as 96, 192, 336, and 720. The best results are bolded and the second best results are underlined.
 ![Univariate](https://github.com/shangzongjiang/MSHyper/blob/main/figures/Univariate%20Results.png)
+
+# Concat
+If you have any questions, please feel free to contact zongjiangshang@cs.zju.edu.cn
+
+# Other works
+📝 Our other works are shown as follows：
+
+Single-step forecasting: Chen L, Chen D, Shang Z, et al. Multi-scale adaptive graph neural network for multivariate time series forecasting. TKDE, 2023, 35(10): 10748-10761.
+[Code Link](https://github.com/shangzongjiang/MAGNN)
+
+AutoML related forecasting: Chen D, Chen L, Shang Z, et al. Scale-aware neural architecture search for multivariate time series forecasting. TKDD, 2024. [Code Link](https://github.com/shangzongjiang/SNAS4MTF)
+
+Long-range & short-range & ultra-long-range time series forecasting: Shang Z, Chen L, Wu B, et al. Ada-MSHyper: Adaptive multi-scale hypergraph transformer for time series forecasting. NeurIPS, 2024. [Code Link](https://github.com/shangzongjiang/Ada-MSHyper)
+
 # Citation 
 😀If you find this repo useful, please cite our paper.
 ```
 @article{shang2024mshyper,
   title={Mshyper: Multi-scale hypergraph transformer for long-range time series forecasting},
   author={Zongjiang, Shang and Ling, Chen},
-  journal={arXiv preprint arXiv:2401.09261},
+  journal={arXiv preprint arXiv:2401.09261
+        
+        
+        
+        },
   year={2024}
 }
 ```
