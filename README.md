@@ -90,7 +90,9 @@ If you have any questions, please feel free to contact zongjiangshang@cs.zju.edu
 @article{shang2024mshyper,
   title={Mshyper: Multi-scale hypergraph transformer for long-range time series forecasting},
   author={Zongjiang, Shang and Ling, Chen},
-  journal={arXiv preprint arXiv:2401.09261},
+  journal={arXiv preprint arXiv:2401.09261
+        
+        },
   year={2024}
 }
 ```
