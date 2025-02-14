@@ -9,6 +9,8 @@ The core of MSHyper is to build multi-scale hypergraph structures, which can exp
 * Python 3.8.5
 * PyTorch 1.13.1
 * math, sklearn, numpy, torch_geometric
+
+⚠️ Note: Due to version discrepancies, you may encounter the following error: "RuntimeError: The size of tensor a (16) must match the size of tensor b (96) at non-singleton dimension 1." To resolve this issue, replace the **message_passing.py** file with the corresponding version provided in the **utils** directory.
 * # 3 Datasets && Description
 
 To evaluate the performance of MSHyper, we conduct experiments on eight public benchmark datasets: [ETT(ETTh1, ETTh2, ETTm1, and ETTm2)](https://github.com/MAZiqing/FEDformer), [Electricity](https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014), [Flight](https://drive.google.com/drive/folders/1JSZByfM0Ghat3g_D3a-puTZ2JsfebNWL), [Weather](https://www.bgc-jena.mpg.de/wetter/), and [Exchange-Rate]([http://pems.dot.ca.gov/](https://github.com/MAZiqing/FEDformer)). The detailed descriptions about the eight datasets are given as follows:
